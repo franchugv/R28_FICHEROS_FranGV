@@ -26,6 +26,9 @@ namespace R28_FICHEROS_FranGV.APIFichero
             Escritor.Close();
         }
 
+
+
+
         public static void EscribirFichero(string nombre)
         {
             // Recursos
@@ -61,25 +64,7 @@ namespace R28_FICHEROS_FranGV.APIFichero
             return cadena;
         }
 
-        //public static bool VerificarRepeticion(string busqueda) MAL
-        //{
-        //    bool esCorrecto = true;
-
-
-        //    char[] Nombres = new char[ConsultarFichero().Length];
-
-
-        //    Nombres = ConsultarFichero().ToCharArray();
-
-        //    for (int indice = 0; indice < ConsultarFichero().Length; indice++)
-        //    {
-        //        if (Nombres[indice].ToString().Contains(busqueda)) esCorrecto = false;
-
-        //    }
-
-
-        //    return esCorrecto;
-        //}
+       
 
         public static bool VerificarRepeticion(string busqueda)
         {
