@@ -87,13 +87,13 @@ namespace R28_FICHEROS_FranGV.APIFichero
 
             string fichero;
 
-            // Preparación cadenas
+            // Preparación cadenas Quitar Espacios
             fichero = ConsultarFichero().Replace("\n", "").ToLower();
             busqueda = busqueda.ToLower().Replace(" ","");
 
 
 
-            if (busqueda.Contains(fichero)) esCorrecto = false; // Quitar Espacios
+            if (fichero.Contains(busqueda)) esCorrecto = false; 
 
 
             return esCorrecto;
