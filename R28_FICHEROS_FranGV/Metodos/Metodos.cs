@@ -72,5 +72,13 @@ namespace R28_FICHEROS_FranGV.Metodos
 
         }
 
+        public static void MostrarDato(string dato)
+        {
+            Console.Clear();
+            Console.WriteLine($"{dato}");
+
+            Pausa();
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using R28_FICHEROS_FranGV.Consultar;
+using R28_FICHEROS_FranGV.Verificar;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,7 @@ namespace R28_FICHEROS_FranGV.ControladorPrincipal
                             UIConsultar.MostrarDatos();
                             break;
                         case OpcionesPrincipal.Verificar:
+                            ControladorVerificar.ControladorV();
                             break;
                     }
 
