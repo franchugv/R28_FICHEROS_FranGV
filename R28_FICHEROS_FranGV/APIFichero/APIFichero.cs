@@ -38,6 +38,9 @@ namespace R28_FICHEROS_FranGV.APIFichero
             // Seguro de si AppendAllText lo hace también...
             VerificarExsistenciaFichero();
 
+
+            nombre = nombre.ToLower();
+
             File.AppendAllText(RUTA, $"{nombre}\n");
 
 
@@ -84,7 +87,7 @@ namespace R28_FICHEROS_FranGV.APIFichero
             return esCorrecto;
         }
 
-        public static void VerificarExsistenciaFichero()
+        private static void VerificarExsistenciaFichero()
         {
             if (!File.Exists(RUTA)) CrearFichero();
         }
