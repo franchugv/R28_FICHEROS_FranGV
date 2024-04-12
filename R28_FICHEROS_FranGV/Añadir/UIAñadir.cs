@@ -16,7 +16,7 @@ namespace R28_FICHEROS_FranGV.Añadir
 
         public static void FinEjecucionA()
         {
-            Console.WriteLine("¡Fichero añadido de forma exitosa!");
+            Console.WriteLine("¡El nombre ha añadido de forma exitosa!");
             Metodos.Metodos.Pausa();
         }
     }
